@@ -5,8 +5,23 @@ app.use(express.json());
 let items = [];
 let idCounter = 1;
 
+// Helper function for item validation
+function validateItem(body) {
+  if (
+    typeof body.title !== 'string' ||
+    typeof body.price !== 'number' ||
+    typeof body.description !== 'string'
+  ) {
+    return false;
+  }
+  return true;
+}
+
 // Create
 app.post('/items', (req, res) => {
+  if (!validateItem(req.body)) {
+    return res.status(400).json({ error: 'Invalid item schema. Required: title (string), price (number), description (string).' });
+  }
   const item = { id: idCounter++, ...req.body };
   items.push(item);
   res.status(201).json(item);
