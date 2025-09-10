@@ -1,0 +1,25 @@
+{
+  "name": "Full update",
+  "request": {
+    "type": "http",
+    "url": "http://{{base_url}}/items/1",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "PUT",
+    "queryParams": [],
+    "headers": [],
+    "body": "{\n  \"title\": \"Updated item\",\n  \"price\": {{price}},\n  \"description\": \"Updated item\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"title\": \"Updated item\",\n  \"price\": {{price}},\n  \"description\": \"Updated item\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

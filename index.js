@@ -38,7 +38,6 @@ app.get('/items/:id', (req, res) => {
   if (!item) return res.status(404).json({ error: 'Item not found' });
   res.json(item);
 });
-
 // Update
 app.put('/items/:id', (req, res) => {
   const idx = items.findIndex(i => i.id === parseInt(req.params.id));

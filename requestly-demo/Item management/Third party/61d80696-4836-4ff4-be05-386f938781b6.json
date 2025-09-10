@@ -1,0 +1,20 @@
+{
+  "name": "Get third party error",
+  "request": {
+    "type": "http",
+    "url": "http://{{base_url}}/httpbin",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [],
+    "body": null,
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

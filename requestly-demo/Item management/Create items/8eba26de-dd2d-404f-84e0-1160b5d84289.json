@@ -1,0 +1,25 @@
+{
+  "name": "Create new item with incomplete body",
+  "request": {
+    "type": "http",
+    "url": "http://{{base_url}}/items",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [],
+    "body": "{\n  \"title\": \"Sample item\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"title\": \"Sample item\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

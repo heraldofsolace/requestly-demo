@@ -1,0 +1,25 @@
+{
+  "name": "Create new item",
+  "request": {
+    "type": "http",
+    "url": "http://{{base_url}}/items",
+    "scripts": {
+      "preRequest": "// **********************************************\n// 🛠️ Learn more about scripts and snippets: https://docs.requestly.com/general/api-client/scripts\n// **********************************************\nvar price = Math.round(Math.random()*100)\nrq.environment.set(\"item_no\", rq.environment.get(\"item_no\")+1)\nrq.environment.set(\"price\", price)",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [],
+    "body": "{\n  \"title\": \"Sample item {{item_no}}\",\n  \"price\": {{price}},\n  \"description\": \"Sample item\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"title\": \"Sample item {{item_no}}\",\n  \"price\": {{price}},\n  \"description\": \"Sample item\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

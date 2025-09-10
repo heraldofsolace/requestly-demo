@@ -1,0 +1,23 @@
+{
+  "name": "Dev",
+  "variables": {
+    "base_url": {
+      "value": "localhost:3000",
+      "type": "string",
+      "id": 0,
+      "isSecret": false
+    },
+    "price": {
+      "value": 0,
+      "type": "number",
+      "id": 1,
+      "isSecret": false
+    },
+    "item_no": {
+      "value": 1,
+      "type": "number",
+      "id": 2,
+      "isSecret": false
+    }
+  }
+}
