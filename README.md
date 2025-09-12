@@ -5,16 +5,18 @@ This is a basic Express.js application demonstrating CRUD operations for a resou
 ## Setup
 
 1. Install dependencies:
+
    ```bash
    npm install
    ```
+
 2. Start the server:
+
    ```bash
    npm start
    ```
 
 ## API Endpoints
-
 
 - `GET /items` - List all items
 - `GET /items/:id` - Get item by ID
@@ -29,5 +31,4 @@ This is a basic Express.js application demonstrating CRUD operations for a resou
 
 - `index.js` - Main server file
 - `package.json` - Project metadata and scripts
-
-Feel free to extend this project for your needs.
+- `requestly-demo` - Requestly workspace
