@@ -10,9 +10,9 @@
     "method": "PUT",
     "queryParams": [],
     "headers": [],
-    "body": "{\n  \"title\": \"Updated item\",\n  \"price\": {{price}},\n  \"description\": \"Updated item\"\n}",
+    "body": "{\n  \"title\": \"Updated item\",\n  \"price\": {{price}},\n  \"description\": \"Updated item\",\n  \"categories\": [\"fashion\"],\n   \"manufacturer\": {\n    \"name\": \"Manufacturer {{item_no}}\",\n    \"address\": \"Street {{item_no}}, CA\"\n  }\n}",
     "bodyContainer": {
-      "text": "{\n  \"title\": \"Updated item\",\n  \"price\": {{price}},\n  \"description\": \"Updated item\"\n}",
+      "text": "{\n  \"title\": \"Updated item\",\n  \"price\": {{price}},\n  \"description\": \"Updated item\",\n  \"categories\": [\"fashion\"],\n   \"manufacturer\": {\n    \"name\": \"Manufacturer {{item_no}}\",\n    \"address\": \"Street {{item_no}}, CA\"\n  }\n}",
       "form": [],
       "multipartForm": []
     },

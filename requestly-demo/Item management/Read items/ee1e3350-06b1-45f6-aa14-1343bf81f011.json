@@ -5,7 +5,7 @@
     "url": "http://{{base_url}}/items",
     "scripts": {
       "preRequest": "",
-      "postResponse": ""
+      "postResponse": "\n"
     },
     "method": "GET",
     "queryParams": [],

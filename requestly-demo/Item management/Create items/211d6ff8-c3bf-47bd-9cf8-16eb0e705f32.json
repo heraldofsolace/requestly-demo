@@ -10,9 +10,9 @@
     "method": "POST",
     "queryParams": [],
     "headers": [],
-    "body": "{\n  \"title\": \"Sample item {{item_no}}\",\n  \"price\": {{price}},\n  \"description\": \"Sample item\"\n}",
+    "body": "{\n  \"title\": \"Sample item {{item_no}}\",\n  \"price\": {{price}},\n  \"description\": \"Sample item {{item_no}}\",\n  \"categories\": [ \"fashion\", \"wearable\"],\n  \"manufacturer\": {\n    \"name\": \"Manufacturer {{item_no}}\",\n    \"address\": \"Street {{item_no}}, CA\"\n  }\n}",
     "bodyContainer": {
-      "text": "{\n  \"title\": \"Sample item {{item_no}}\",\n  \"price\": {{price}},\n  \"description\": \"Sample item\"\n}",
+      "text": "{\n  \"title\": \"Sample item {{item_no}}\",\n  \"price\": {{price}},\n  \"description\": \"Sample item {{item_no}}\",\n  \"categories\": [ \"fashion\", \"wearable\"],\n  \"manufacturer\": {\n    \"name\": \"Manufacturer {{item_no}}\",\n    \"address\": \"Street {{item_no}}, CA\"\n  }\n}",
       "form": [],
       "multipartForm": []
     },
