@@ -1,8 +1,8 @@
 {
-  "name": "Get single item",
+  "name": "Invalid route",
   "request": {
     "type": "http",
-    "url": "http://{{base_url}}/items/1",
+    "url": "{{base_url}}/invalid",
     "scripts": {
       "preRequest": "",
       "postResponse": ""

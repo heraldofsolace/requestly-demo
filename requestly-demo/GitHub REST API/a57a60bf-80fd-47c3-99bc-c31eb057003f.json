@@ -1,8 +1,8 @@
 {
-  "name": "Partial update",
+  "name": "List repos",
   "request": {
     "type": "http",
-    "url": "https://app.requestly.io/echo",
+    "url": "{{base_url}}/user/repos",
     "scripts": {
       "preRequest": "",
       "postResponse": ""

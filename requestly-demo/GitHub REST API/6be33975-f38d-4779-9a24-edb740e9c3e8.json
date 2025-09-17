@@ -1,18 +1,18 @@
 {
-  "name": "Create new item with incomplete body",
+  "name": "Close issue",
   "request": {
     "type": "http",
-    "url": "http://{{base_url}}/items",
+    "url": "{{base_url}}/repos/{{owner}}/{{repo}}/issues/{{issue_id}}",
     "scripts": {
       "preRequest": "",
       "postResponse": ""
     },
-    "method": "POST",
+    "method": "PATCH",
     "queryParams": [],
     "headers": [],
-    "body": "{\n  \"title\": \"Sample item\"\n}",
+    "body": "{\n  \"state\": \"closed\"\n}",
     "bodyContainer": {
-      "text": "{\n  \"title\": \"Sample item\"\n}",
+      "text": "{\n  \"state\": \"closed\"\n}",
       "form": [],
       "multipartForm": []
     },

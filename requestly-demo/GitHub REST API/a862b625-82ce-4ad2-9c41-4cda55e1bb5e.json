@@ -1,0 +1,32 @@
+{
+  "name": "Create issue",
+  "request": {
+    "type": "http",
+    "url": "{{base_url}}/repos/{{owner}}/abhattacharyea.dev/issues",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "POST",
+    "queryParams": [],
+    "headers": [
+      {
+        "id": 1757945091117,
+        "key": "Accept",
+        "value": "application/vnd.github+json",
+        "isEnabled": true
+      }
+    ],
+    "body": "{\n  \"title\": \"Test issue from Requestly\",\n  \"body\": \"This is a test issue created via API\"\n}",
+    "bodyContainer": {
+      "text": "{\n  \"title\": \"Test issue from Requestly\",\n  \"body\": \"This is a test issue created via API\"\n}",
+      "form": [],
+      "multipartForm": []
+    },
+    "contentType": "application/json",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}

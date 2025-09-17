@@ -1,8 +1,8 @@
 {
-  "name": "Get third party error",
+  "name": "Fetch issue",
   "request": {
     "type": "http",
-    "url": "http://{{base_url}}/httpbin",
+    "url": "{{base_url}}/repos/{{owner}}/abhattacharyea.dev/issues/{{issue_id}}",
     "scripts": {
       "preRequest": "",
       "postResponse": ""

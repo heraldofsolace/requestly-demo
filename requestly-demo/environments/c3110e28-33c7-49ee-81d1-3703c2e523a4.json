@@ -2,21 +2,33 @@
   "name": "Dev",
   "variables": {
     "base_url": {
-      "value": "localhost:3000",
+      "value": "https://api.github.com",
       "type": "string",
       "id": 0,
       "isSecret": false
     },
-    "price": {
-      "value": 0,
-      "type": "number",
+    "token": {
+      "value": "xxxx",
+      "type": "string",
       "id": 1,
+      "isSecret": true
+    },
+    "owner": {
+      "value": "owner",
+      "type": "string",
+      "id": 2,
       "isSecret": false
     },
-    "item_no": {
-      "value": 1,
+    "issue_id": {
+      "value": 0,
       "type": "number",
-      "id": 2,
+      "id": 3,
+      "isSecret": false
+    },
+    "repo": {
+      "value": "repo",
+      "type": "string",
+      "id": 4,
       "isSecret": false
     }
   }
