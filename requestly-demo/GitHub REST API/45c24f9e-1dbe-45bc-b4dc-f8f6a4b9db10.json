@@ -2,7 +2,7 @@
   "name": "Fetch issue",
   "request": {
     "type": "http",
-    "url": "{{base_url}}/repos/{{owner}}/abhattacharyea.dev/issues/{{issue_id}}",
+    "url": "{{base_url}}/repos/{{owner}}/{{repo}}/issues/{{issue_id}}",
     "scripts": {
       "preRequest": "",
       "postResponse": ""

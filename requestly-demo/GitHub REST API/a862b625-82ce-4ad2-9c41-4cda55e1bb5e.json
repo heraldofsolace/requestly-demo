@@ -2,7 +2,7 @@
   "name": "Create issue",
   "request": {
     "type": "http",
-    "url": "{{base_url}}/repos/{{owner}}/abhattacharyea.dev/issues",
+    "url": "{{base_url}}/repos/{{owner}}/{{repo}}/issues",
     "scripts": {
       "preRequest": "",
       "postResponse": ""
